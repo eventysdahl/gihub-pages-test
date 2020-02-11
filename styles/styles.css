@@ -5,6 +5,7 @@ body {
 
 div {
 	margin-top: 15px;
+	margin-bottom: 30px;
 }
 
 .image-section {
@@ -16,4 +17,10 @@ div {
 	margin-right: 25px;
 	margin-left: 25px;
 	background-color: white;
+}
+
+.map-section {
+	display: flex;
+	justify-content: center;
+
 }
