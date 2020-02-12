@@ -50,14 +50,17 @@
 
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
-        ['City',   'Population'],
-        ['Oslo',      2],
-        ['Bergen',     1]
+        ['lat','long', 'City',  'Population'],
+        [59.9,10.7,  'Oslo',    20],
+        [59,5.7,	'Stavanger',	10],
+        [60.4 ,5.3 , 'Bergen', 5],
+        [63.4,10.4, 'Trondheim', 1]
       ]);
 
       var options = {
         region: 'NO',
         displayMode: 'markers',
+        colorAxis: {colors: ['green', 'blue']}
       };
 
       var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
