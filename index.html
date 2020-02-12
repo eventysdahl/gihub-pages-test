@@ -41,24 +41,23 @@
     <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
     <script type='text/javascript'>
      google.charts.load('current', {
-       'packages': ['corechart', 'geochart'],
+       'packages': ['geochart'],
        // Note: you will need to get a mapsApiKey for your project.
        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-       'mapsApiKey': 
+       'mapsApiKey': 'AIzaSyBO-Xi8Qjp3mS5YDOmiqwnb8UIVwPJNh9Y'
      });
      google.charts.setOnLoadCallback(drawMarkersMap);
 
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
-        ['City',   'Population', 'Area'],
-        ['Oslo',      2761,    128.31],
-        ['Bergen',     1310,    181.76]
+        ['City',   'Population'],
+        ['Oslo',      2],
+        ['Bergen',     1]
       ]);
 
       var options = {
         region: 'NO',
         displayMode: 'markers',
-        colorAxis: {colors: ['green', 'red']}
       };
 
       var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
