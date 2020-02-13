@@ -31,6 +31,11 @@ nav {
     padding: 0 1em;
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+}
+
 .header-title {
     font-size: 2em;
     font-weight: bold;
@@ -112,4 +117,22 @@ nav a:hover {
 
 .map {
     height: 40em;
+}
+
+.feedback a {
+  font: bold 11px;
+  text-decoration: none;
+  background-color: #2a4f8f;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+
+}
+
+.feedback {
+    text-align: center;
+    padding-top: 2em;
 }
