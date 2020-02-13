@@ -1,0 +1,86 @@
+Møte 13 Februar 2020
+
+Agenda:
+
+Agenda for møtet (ikke kronologisk):
+
+1. 	Diskutere navnebytte fra Tyholt Statistics™ (eller i tillegg til)
+2. 	Webpage design programming, forside, faner
+3. 	Add information about: (inspo: https://www.equinor.com/, https://www.ssb.no/en etc)
+4. X 	Who we are/About us 
+5. 	Vision
+6. 	Core values
+7. 	History
+8. ?	Harbitz og gjengen
+9. 	Careers
+10. 	Core business areas
+11. 	Cooperation
+12. 	Ferdigstille questionnaire, mange spørsmål
+13. 	Bestemme plots som skal med
+14. 	Hvilke som er der hele tiden
+15. 	Bestemme hvilke plots som skal komme hver uke/måned/annenhver uke. Ja, vi skal ha plots 16. som kommer fortløpende basert på svarene som blir sendt inn
+17. 	Link webpage and google sheet results, find a way to do this
+18. 	Plot inclusion programming, legge inn riktig plot på riktig side
+19. 	Eventuelt
+
+____________________________________________
+
+1. 	Diskutere navnebytte fra Tyholt Statistics™ (eller i tillegg til)
+2. 	Webpage design programming, forside, faner
+
+	- Vetle progger bra her.
+	- Forslag til flere faner?
+
+
+3. 	Add information about: (inspo: https://www.equinor.com/, https://www.ssb.no/en etc)
+
+4. X 	Who we are/About us
+
+	- We're Tystats2020 (NAMECHANGE?), a broad consultancy and data management and visualisation company with a proud history. We're three committed colleagues developing questionnaires, highly sophisticated code and visual front and back end design through digital and analogue aids. We're the only operator in Norway, the largest on-shore operator in Europe, and a steadily growing force globally. Driven by our dedication to safe and provident design solutions, we always ensure the best solutions possible whilst maintaining an acceptable standard within gender equality and data privacy. We're shaping the future of online data gathering, fabulous plotting and odd data correlation plots.
+
+
+5. 	Vision
+
+	- Our purpose, vision and values
+		
+	Purpose: To adequately safeguard data privacy, pool cues and sleep patterns
+	
+	Vision: Three trusted voices to maintain and tackle the server overloads experienced at the Tyholt Statistics 2020 webpage.
+
+	Values: 
+		- WE DON'T CARE
+			About your needs for attention
+		- WE DON'T DARE
+			We always chose percentage or thruth
+		- WE DON'T SHARE
+			At least some of the data you provide. This we sell to google
+
+6. 	Core values
+
+	- Integrity
+	- Accountability
+	- Diligence
+	- Perseverance
+	- Discipline
+
+7. 	History
+		
+	Over the past few years, Tyholt Statistics has become the world's leading market for specialist questionnaires and odd correllation plots. What started as a humble startup in a garage with only one mastermind soon took a g
+	
+	 	- Harbitz og gjengen
+9. 	Careers
+10. 	Core business areas
+11. 	Cooperation
+12. 	Ferdigstille questionnaire, mange spørsmål
+
+	- Google form
+	- Har fullført litt spørsmål. Formen ser ut til å fungere fint
+	- Problemet med hvordan brukere kan oppdatere svarene ble løst ved å måtte logge inn med google-konto for å svare
+
+
+13. 	Bestemme plots som skal med
+14. 	Hvilke som er der hele tiden
+15. 	Bestemme hvilke plots som skal komme hver uke/måned/annenhver uke. Ja, vi skal ha plots 16. som kommer fortløpende basert på svarene som blir sendt inn
+17. 	Link webpage and google sheet results, find a way to do this
+18. 	Plot inclusion programming, legge inn riktig plot på riktig side
+19. 	Eventuelt
