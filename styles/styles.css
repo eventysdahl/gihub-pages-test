@@ -119,8 +119,9 @@ nav a:hover {
     height: 40em;
 }
 
-.feedback a {
-  font: bold 11px;
+#feedback {
+  font: bold;
+  font-size:  40px;
   text-decoration: none;
   background-color: #2a4f8f;
   color: white;
