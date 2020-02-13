@@ -141,13 +141,24 @@ nav a:hover {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 30.00%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.00%;
   padding: 5px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 /* Clear floats after image containers */
-.row::after {
+.row {
   content: "";
   clear: both;
-  display: table;
+  display: flex;
+  justify-content: center;
 }
