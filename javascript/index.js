@@ -6,9 +6,9 @@ google.charts.load('current', {
 
 window.onload = function() {
     // Set the callbacks to run when the Google Visualization API is loaded.
-    /*
+    
     google.charts.setOnLoadCallback(draw({
-        sheetID: '1414326963',
+        sheetID: '1662540604',
         selector: '#office',
         type: 'pie',
         settings: {
@@ -16,25 +16,25 @@ window.onload = function() {
         }
     }));
     google.charts.setOnLoadCallback(draw({
-        sheetID: '466014968',
+        sheetID: '1384325223',
         selector: '#profile',
         type: 'pie',
         settings: {
             title: 'Hovedprofil'
         }
     }));
-    */
+    
     google.charts.setOnLoadCallback(draw({
-        sheetID: '738402351',
+        sheetID: '1023917008',
         selector: '#gender',
         type: 'pie',
         settings: {
             title: 'Kjønn'
         }
     }));
-    /*
+    
     google.charts.setOnLoadCallback(draw({
-        sheetID: '2103830208',
+        sheetID: '2081815778',
         selector: '#signed',
         type: 'column',
         settings: {
@@ -45,6 +45,7 @@ window.onload = function() {
             }
         }
     }));
+    /*
     google.charts.setOnLoadCallback(draw({
         sheetID: '1186685843',
         selector: '#total',
@@ -64,7 +65,7 @@ window.onload = function() {
     }));
     */
     google.charts.setOnLoadCallback(draw({
-        sheetID: '1395896061',
+        sheetID: '1719168011',
         selector: '#shoes',
         type: 'column',
         settings: {
@@ -75,15 +76,16 @@ window.onload = function() {
             }
         }
     }));
-    /*
+    
     google.charts.setOnLoadCallback(draw({
-        sheetID: '842975833',
+        sheetID: '55814699',
         selector: '#bloodtype',
         type: 'pie',
         settings: {
             title: 'Blodtype'
         }
     }));
+    /*
     google.charts.setOnLoadCallback(draw({
         sheetID: '996751350',
         selector: '#jobs',
@@ -92,8 +94,9 @@ window.onload = function() {
             title: 'Andel med jobb'
         }
     }));
+    */
     google.charts.setOnLoadCallback(draw({
-        sheetID: '1214703004',
+        sheetID: '1802206864',
         selector: '#profile-percentage',
         type: 'column',
         settings: {
@@ -105,6 +108,7 @@ window.onload = function() {
             vAxis: {title: 'Prosent', titleTextStyle: {italic: false}}
         }
     }));
+    /*
     google.charts.setOnLoadCallback(draw({
         sheetID: '1941947079',
         selector: '#industry',
@@ -186,7 +190,7 @@ function handleResponse(response, options) {
  * @param {object} options Option object for the chart being created.
  */
 function draw(options) {
-    var url = "https://docs.google.com/spreadsheets/d/1NmcXXaLjyxoRv4ltkRkosnMddWiny7CWg6Blu5zvtyo/gviz/tq";
+    var url = "https://docs.google.com/spreadsheets/d/1jmosQuhjZKUn9204-7USMGtEfTJ4XfsUxYEn_5QB3fU/gviz/tq";
     var settings = "?gid=" + options.sheetID;
 
     // Add default settings for chart size, unless overridden
