@@ -4,7 +4,7 @@
     <title>TyStats</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="javascript/index.js"></script>
   </head>
@@ -44,16 +44,29 @@
 
 
 <body>
-    <header>
-        <nav>
-            <div class="header-title">Tyholt Statistics</div>
-            <div class="nav-buttons">
-                <a href="#">Main</a>
-                <a href="monthly/index.html">Monthly Plots</a>
-                <a href="about/index.html">About</a>
-            </div>
-        </nav>
+
+  <header>
+    <div class="header-title">Tyholt Statistics</div>
+     <ul>
+ <li><a href="../home/index.html">Home</a></li>
+
+ <li><a href="../monthly/index.html">Monthly plots</a>
+ </li>
+
+  <li><a href="../about/index.html">About</a>
+  <ul>
+   <li><a href="#about_vision">Vision &amp; values</a></li>
+   <li><a href="#about_feedback">Feedback</a></li>
+   <li><a href="#about_the_team">The EVE team</a></li>
+  </ul>
+ </li>
+
+ <li><a href="../news/index.html">News and updates</a></li>
+</ul>
+
+<div style="height:20px; width:100%; clear:both;"></div>
     </header>
+
     <div class="content">
 
             <h5> By EVE Consulting - Prograstinating since 2015 </h5>
@@ -70,8 +83,9 @@
         </div>
 
     </div>
+
     <footer>
-        <object name="footer" type="text/html" data="footer.html"></object>
+        <object name="footer" type="text/html" data="../footer.html"></object>
     </footer>
 </body>
 
