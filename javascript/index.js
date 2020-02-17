@@ -69,6 +69,7 @@ window.onload = function() {
         type: 'column',
         settings: {
             title: 'Skostørrelse',
+            colors: ['#DC8473'],
             chartArea: {
                 left: 50,
                 right: 20
@@ -84,16 +85,16 @@ window.onload = function() {
             title: 'Blodtype'
         }
     }));
-    /*
+    
     google.charts.setOnLoadCallback(draw({
-        sheetID: '996751350',
+        sheetID: '2081815778',
         selector: '#jobs',
         type: 'pie',
         settings: {
-            title: 'Andel med jobb'
+            title: 'Andel med jobb av de som har svart'
         }
     }));
-    */
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1802206864',
         selector: '#profile-percentage',
@@ -129,7 +130,22 @@ window.onload = function() {
      	}
   	}));
 
-    
+	google.charts.setOnLoadCallback(draw({
+     	sheetID: '139832340',
+     	selector: '#shoeheight',
+     	type: 'bubble',
+     	settings: {
+     		title: 'Skostørrelse vs høyde',
+     		colorAxis: {colors: ['yellow', 'red']},
+     		vAxis: {title: 'Høyde i cm', minValue: 150, maxValue: 200 },
+     		hAxis: {title: 'Skostr.', minValue: 34, maxValue: 50},
+     		chartArea: {
+                left: 50,
+                right: 50
+            },
+     	}
+  	}));
+	    
 };
 
 /**
