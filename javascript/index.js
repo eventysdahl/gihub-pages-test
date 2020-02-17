@@ -45,9 +45,9 @@ window.onload = function() {
             }
         }
     }));
-    /*
+    
     google.charts.setOnLoadCallback(draw({
-        sheetID: '1186685843',
+        sheetID: '1295165639',
         selector: '#total',
         type: 'column',
         settings: {
@@ -59,11 +59,10 @@ window.onload = function() {
             trendlines: {0: {
                 type: 'exponential'
             }},
-            hAxis: {maxValue: new Date(2018, 6, 1)},
             vAxis: {maxValue: 80}
         }
     }));
-    */
+    
     google.charts.setOnLoadCallback(draw({
         sheetID: '1719168011',
         selector: '#shoes',
@@ -100,40 +99,37 @@ window.onload = function() {
         selector: '#profile-percentage',
         type: 'column',
         settings: {
-            title: 'Andel av hver spesialisering som har jobb',
+            title: 'Andel av hver spesialisering som har jobb (andel av de som har svart på skjemaet)',
             chartArea: {
                 left: 50,
                 right: 20
             },
-            vAxis: {title: 'Prosent', titleTextStyle: {italic: false}}
+            vAxis: {title: 'Prosent', titleTextStyle: {italic: false}, maxValue: 100, minValue: 0}
         }
     }));
-    /*
+
     google.charts.setOnLoadCallback(draw({
-        sheetID: '1941947079',
+        sheetID: '1978833198',
         selector: '#industry',
         type: 'pie',
         settings: {
             title: 'Bransjer'
         }
     }));
-    google.charts.setOnLoadCallback(draw({
-        sheetID: '1376247020',
-        selector: '#map',
-        type: 'map',
-        settings: {
-            showTooltip: true,
-            showInfoWindow: true,
-            mapType: 'normal',
-            icons: {
-                default: {
-                    normal: 'https://maps.google.com/mapfiles/ms/micons/red-dot.png',
-                    selected: 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png'
-                }
-            }
-        }
-    })); 
-    */
+
+     google.charts.setOnLoadCallback(draw({
+     	sheetID: '137775932',
+     	selector: '#map',
+     	type: 'map',
+     	settings: {
+     		title: 'Hvor i landet folk har fått jobb',
+     		region: 'NO',
+        	displayMode: 'markers',
+        	colorAxis: {colors: ['green', 'blue']}
+     	}
+  	}));
+
+    
 };
 
 /**
@@ -160,7 +156,7 @@ function makeChart(options) {
         case 'geoChart':
             return new google.visualization.GeoChart(element);
         case 'map':
-            return new google.visualization.Map(element);
+            return new google.visualization.GeoChart(element);
         default:
             throw 'Error in makeChart(): No match for chart type';
     }
