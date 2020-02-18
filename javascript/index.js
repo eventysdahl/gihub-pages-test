@@ -29,7 +29,8 @@ window.onload = function() {
         selector: '#gender',
         type: 'pie',
         settings: {
-            title: 'Kjønn'
+            title: 'Kjønn',
+            colors: ['blue','magenta']
         }
     }));
     
@@ -45,6 +46,35 @@ window.onload = function() {
             }
         }
     }));
+
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '143398132',
+        selector: '#startgender',
+        type: 'column',
+        settings: {
+            title: 'Når vi starter dagen fordelt på kjønn',
+            chartArea: {
+                left: 50,
+                right: 20
+            }
+        }
+    }));
+
+    
+
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '755892110',
+        selector: '#soskensnitt',
+        type: 'column',
+        settings: {
+            title: 'Karaktersnitt ut ifra om man er eldst, yngst eller mellom i søskenflokken',
+            chartArea: {
+                left: 50,
+                right: 20
+            }
+        }
+    }));
+
     
     google.charts.setOnLoadCallback(draw({
         sheetID: '1295165639',
@@ -95,6 +125,17 @@ window.onload = function() {
         }
     }));
 
+	google.charts.setOnLoadCallback(draw({
+        sheetID: '1608901855',
+        selector: '#answers',
+        type: 'pie',
+        settings: {
+            title: 'Andel som har svart, av maksimum forventede svar',
+            colors: ['black','grey']
+        }
+    }));
+    
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1802206864',
         selector: '#profile-percentage',
@@ -130,6 +171,29 @@ window.onload = function() {
      	}
   	}));
 
+    google.charts.setOnLoadCallback(draw({
+     	sheetID: '418070906',
+     	selector: '#oljejob',
+     	type: 'line',
+     	settings: {
+     		title: 'Oljepris og jobbsigneringer'
+     	}
+  	}));
+
+  	google.charts.setOnLoadCallback(draw({
+     	sheetID: '661648749',
+     	selector: '#handjob',
+     	type: 'column',
+     	settings: {
+     		title: 'Andel av de høyre- og venstrehendte som har fått jobb',
+     		vAxis: {title: 'Prosent', minValue: 0, maxValue: 100},
+     		chartArea: {left: 50, right: 50}
+     	}
+  	}));
+
+
+     
+
 	google.charts.setOnLoadCallback(draw({
      	sheetID: '139832340',
      	selector: '#shoeheight',
@@ -142,7 +206,7 @@ window.onload = function() {
      		chartArea: {
                 left: 50,
                 right: 50
-            },
+            }
      	}
   	}));
 	    
@@ -169,8 +233,8 @@ function makeChart(options) {
             return new google.visualization.BubbleChart(element);
         case 'histogram':
             return new google.visualization.Histogram(element);
-        case 'geoChart':
-            return new google.visualization.GeoChart(element);
+        case 'line':
+            return new google.visualization.LineChart(element);
         case 'map':
             return new google.visualization.GeoChart(element);
         default:
