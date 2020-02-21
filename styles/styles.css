@@ -238,3 +238,31 @@ transition:transform 0.25s ease;
   display: flex;
   justify-content: center;
 }
+
+/* Fixes a "hidden" position for headers so scrolling scrolls to the intended header */
+h1::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+h3::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
