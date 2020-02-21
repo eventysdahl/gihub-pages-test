@@ -213,6 +213,24 @@ nav a:hover {
   width: 80%;
 }
 
+.zoom_max {
+transition:transform 0.25s ease;
+}
+
+.zoom_max:hover {
+    -webkit-transform:scale(1.75); /* or some other value */
+    transform:scale(1.75);
+}
+
+.zoom_min {
+transition:transform 0.25s ease;
+}
+
+.zoom_min:hover {
+    -webkit-transform:scale(1.2); /* or some other value */
+    transform:scale(1.2);
+}
+
 /* Clear floats after image containers */
 .row {
   content: "";
