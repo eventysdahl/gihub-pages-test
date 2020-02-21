@@ -33,8 +33,7 @@ header {
     background-color: #1976D2;
     color: white;
     text-align: center;
-    margin: 0px auto;
-    margin: 400 auto; left:247px; right:247px;
+    margin: 0 auto; left:0px; right:0px;
 }
 
 /* MENU TABS START */
