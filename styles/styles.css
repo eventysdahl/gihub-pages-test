@@ -33,23 +33,9 @@ header {
     background-color: #1976D2;
     color: white;
     text-align: center;
-    margin: 0px;
-    width: 100%;
+    margin: 0px auto;
+    margin: 400 auto; left:247px; right:247px;
 }
-
-/* MENU SCROLL FIX START */
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-/* MENU SCROLL FIX END */
 
 /* MENU TABS START */
 ul {
@@ -101,6 +87,13 @@ footer {
     text-align: center;
 }
 
+.header {
+  position: fixed;
+  margin: 0px auto;
+  top: 0px;
+  z-index: 9;
+}
+
 .header-title {
     font-size: 2em;
     font-weight: bold;
@@ -130,7 +123,7 @@ nav a:hover {
     max-width: 1024px;
     min-height: 10vw;
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: 150px;
     padding: 0.5em;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
