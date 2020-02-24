@@ -1,7 +1,6 @@
 // Load the Visualization API and the piechart package.
 google.charts.load('current', {
-    'packages': ['corechart', 'map'],
-    'mapsApiKey': 'AIzaSyBO-Xi8Qjp3mS5YDOmiqwnb8UIVwPJNh9Y'
+    'packages': ['corechart', 'map']
 });
 
 window.onload = function() {
