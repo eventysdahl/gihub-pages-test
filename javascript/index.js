@@ -65,7 +65,7 @@ window.onload = function() {
     google.charts.setOnLoadCallback(draw({
         sheetID: '755892110',
         selector: '#soskensnitt',
-        type: 'column',
+        type: 'line',
         settings: {
             title: 'Karaktersnitt ut ifra om man er eldst, yngst eller mellom i søskenflokken',
             chartArea: {
