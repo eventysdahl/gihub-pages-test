@@ -35,15 +35,12 @@ window.onload = function() {
     }));
     
     google.charts.setOnLoadCallback(draw({
-        sheetID: '2081815778',
+        sheetID: '682338883',
         selector: '#signed',
         type: 'column',
         settings: {
-            title: 'Signeringer',
-            chartArea: {
-                left: 50,
-                right: 20
-            }
+            title: 'Signeringer per måned',
+            colors: ['green']
         }
     }));
 
@@ -53,6 +50,7 @@ window.onload = function() {
         type: 'column',
         settings: {
             title: 'Når vi starter dagen fordelt på kjønn',
+            vAxis: {title: 'Prosent'},
             chartArea: {
                 left: 50,
                 right: 20
@@ -81,7 +79,7 @@ window.onload = function() {
         selector: '#total',
         type: 'column',
         settings: {
-            title: 'Totalt antall med jobb',
+            title: 'Totalt antall med jobb, kumulativt',
             chartArea: {
                 left: 50,
                 right: 20
@@ -92,14 +90,36 @@ window.onload = function() {
             vAxis: {maxValue: 80}
         }
     }));
+
+
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '1272181459',
+        selector: '#singelblokkA',
+        type: 'pie',
+        settings: {
+            title: 'Andel single i A-blokka'
+        }
+    }));
+
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '781618801',
+        selector: '#singelblokkC',
+        type: 'pie',
+        settings: {
+            title: 'Andel single i C-blokka'
+        }
+    }));
     
+    
+
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1719168011',
         selector: '#shoes',
-        type: 'column',
+        type: 'line',
         settings: {
             title: 'Skostørrelse',
-            colors: ['#DC8473'],
+            colors: ['magenta', 'blue'],
             chartArea: {
                 left: 50,
                 right: 20
@@ -131,7 +151,7 @@ window.onload = function() {
         type: 'pie',
         settings: {
             title: 'Andel som har svart, av maksimum forventede svar',
-            colors: ['black','grey']
+            colors: ['yellow','grey']
         }
     }));
     
