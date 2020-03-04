@@ -14,6 +14,42 @@ window.onload = function() {
             title: 'Kontorblokk'
         }
     }));
+
+    //Week 10
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '94341489',
+        selector: '#salary2020',
+        type: 'pie',
+        settings: {
+            title: 'Lønnsfordeling for vårt kull'
+        }
+    }));
+    //DENNE BRUKES IKKE! Men kan være fin å bruke en gang..
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '406708255',
+        selector: '#salary2019',
+        type: 'pie',
+        settings: {
+            title: 'Lønnsfordeling fra BK-undersøkelsen 2019 (Approximate numbers)',
+        vAxis: {Title: 'Test', minValue: 0}
+    }
+    }));
+    //2019vs2020 lønn
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '104414160',
+        selector: '#salary2019VS2020',
+        type: 'column',
+        settings: {
+            title: 'Lønnsgjennomsnitt 2019 VS 2020',
+            colors: ['orange'],
+            bar: {groupWidth: '50%'},
+            vAxis: {
+                format: 'short',
+                minValue: 300000
+                    }
+        }
+    }));
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1384325223',
         selector: '#profile',
