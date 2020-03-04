@@ -40,7 +40,7 @@ window.onload = function() {
         selector: '#salary2019VS2020',
         type: 'column',
         settings: {
-            title: 'Lønnsgjennomsnitt 2019 VS 2020',
+            title: 'Lønnsgjennomsnitt for tidligere år',
             colors: ['orange'],
             bar: {groupWidth: '50%'},
             vAxis: {
