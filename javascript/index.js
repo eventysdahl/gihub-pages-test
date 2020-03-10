@@ -50,6 +50,21 @@ window.onload = function() {
         }
     }));
 
+    //Week 11
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '1886029987',
+        selector: '#snusjobb',
+        type: 'column',
+        settings: {
+            title: 'Snus',
+            colors: ['purple'],
+            bar: {groupWidth: '50%'},
+            vAxis: {title: 'Andel som har fått jobb', minValue: 0, maxValue: 100},
+            hAxis: {title: 'Snuser du?'}
+        }
+    }));
+
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1384325223',
         selector: '#profile',
