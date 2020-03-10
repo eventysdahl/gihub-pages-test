@@ -1,7 +1,6 @@
 // Load the Visualization API and the piechart package.
 google.charts.load('current', {
-    'packages': ['corechart', 'map'],
-    'mapsApiKey': 'AIzaSyBO-Xi8Qjp3mS5YDOmiqwnb8UIVwPJNh9Y'
+    'packages': ['corechart', 'map']
 });
 
 window.onload = function() {
@@ -15,6 +14,42 @@ window.onload = function() {
             title: 'Kontorblokk'
         }
     }));
+
+    //Week 10
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '94341489',
+        selector: '#salary2020',
+        type: 'pie',
+        settings: {
+            title: 'Lønnsfordeling for vårt kull'
+        }
+    }));
+    //DENNE BRUKES IKKE! Men kan være fin å bruke en gang..
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '406708255',
+        selector: '#salary2019',
+        type: 'pie',
+        settings: {
+            title: 'Lønnsfordeling fra BK-undersøkelsen 2019 (Approximate numbers)',
+        vAxis: {Title: 'Test', minValue: 0}
+    }
+    }));
+    //2019vs2020 lønn
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '104414160',
+        selector: '#salary2019VS2020',
+        type: 'column',
+        settings: {
+            title: 'Lønnsgjennomsnitt for tidligere år',
+            colors: ['orange'],
+            bar: {groupWidth: '50%'},
+            vAxis: {
+                format: 'short',
+                minValue: 300000
+                    }
+        }
+    }));
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1384325223',
         selector: '#profile',
@@ -35,15 +70,12 @@ window.onload = function() {
     }));
     
     google.charts.setOnLoadCallback(draw({
-        sheetID: '2081815778',
+        sheetID: '682338883',
         selector: '#signed',
         type: 'column',
         settings: {
-            title: 'Signeringer',
-            chartArea: {
-                left: 50,
-                right: 20
-            }
+            title: 'Signeringer per måned',
+            colors: ['green']
         }
     }));
 
@@ -53,6 +85,7 @@ window.onload = function() {
         type: 'column',
         settings: {
             title: 'Når vi starter dagen fordelt på kjønn',
+            vAxis: {title: 'Prosent'},
             chartArea: {
                 left: 50,
                 right: 20
@@ -81,7 +114,7 @@ window.onload = function() {
         selector: '#total',
         type: 'column',
         settings: {
-            title: 'Totalt antall med jobb',
+            title: 'Totalt antall med jobb, kumulativt',
             chartArea: {
                 left: 50,
                 right: 20
@@ -92,14 +125,36 @@ window.onload = function() {
             vAxis: {maxValue: 80}
         }
     }));
+
+
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '1272181459',
+        selector: '#singelblokkA',
+        type: 'pie',
+        settings: {
+            title: 'Andel single i A-blokka'
+        }
+    }));
+
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '781618801',
+        selector: '#singelblokkC',
+        type: 'pie',
+        settings: {
+            title: 'Andel single i C-blokka'
+        }
+    }));
     
+    
+
+
     google.charts.setOnLoadCallback(draw({
         sheetID: '1719168011',
         selector: '#shoes',
-        type: 'column',
+        type: 'line',
         settings: {
             title: 'Skostørrelse',
-            colors: ['#DC8473'],
+            colors: ['magenta', 'blue'],
             chartArea: {
                 left: 50,
                 right: 20
@@ -131,7 +186,7 @@ window.onload = function() {
         type: 'pie',
         settings: {
             title: 'Andel som har svart, av maksimum forventede svar',
-            colors: ['black','grey']
+            colors: ['yellow','grey']
         }
     }));
     
