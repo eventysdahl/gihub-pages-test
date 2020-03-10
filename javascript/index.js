@@ -56,7 +56,7 @@ window.onload = function() {
         selector: '#snusjobb',
         type: 'column',
         settings: {
-            colors: ['purple'],
+            colors: ['#667E36'],
             bar: {groupWidth: '50%'},
             vAxis: {title: 'Andel som har fått jobb', minValue: 0, maxValue: 100},
             hAxis: {title: 'Snuser du?'}
