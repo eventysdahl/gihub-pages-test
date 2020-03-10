@@ -191,6 +191,18 @@ window.onload = function() {
      	}
   	}));
 
+//Vetle test
+    google.charts.setOnLoadCallback(draw({
+        sheetID: '94341489',
+        selector: '#lonn',
+        type: 'column',
+        settings: {
+            title: 'Lønn',
+            vAxis: {title: 'Antall', minValue: 0, maxValue: 30},
+            chartArea: {left: 50, right: 50}
+        }
+    }));
+
 
      
 
