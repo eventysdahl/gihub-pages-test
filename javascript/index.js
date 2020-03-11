@@ -58,7 +58,7 @@ window.onload = function() {
         settings: {
             colors: ['#667E36'],
             bar: {groupWidth: '50%'},
-            vAxis: {title: 'Andel som har fått jobb [%]', minValue: 0, maxValue: 100},
+            vAxis: {title: 'Andel som har fått jobb [%]', minValue: 65, maxValue: 90},
             hAxis: {title: 'Snuser du?'}
         }
     }));
